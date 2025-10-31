@@ -1,7 +1,7 @@
-# Swagger Brake Maven plugin [![Build Status](https://travis-ci.com/redskap/swagger-brake-maven-plugin.svg?branch=master)](https://travis-ci.com/redskap/swagger-brake-maven-plugin)
-Maven plugin for [Swagger Brake](https://github.com/redskap/swagger-brake).
+# Swagger Brake Maven plugin
+Maven plugin for [Swagger Brake](https://github.com/docktape/swagger-brake).
 
-The plugin documentation can be found [here](https://redskap.github.io/swagger-brake/maven/).
+The plugin documentation can be found [here](https://docktape.github.io/swagger-brake/maven/).
 
 ## License
 ```text
@@ -17,3 +17,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
+## Publishing
+`./mvnw clean -Ppublication deploy jreleaser:full-release`

@@ -1,4 +1,4 @@
-package io.redskap.swagger.brake.maven;
+package com.docktape.swagger.brake.maven;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

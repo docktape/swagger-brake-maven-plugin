@@ -1,13 +1,13 @@
-package io.redskap.swagger.brake.maven;
+package com.docktape.swagger.brake.maven;
 
 import static java.lang.String.format;
 import static org.apache.commons.collections4.CollectionUtils.isNotEmpty;
 
 import java.util.Collection;
 
-import io.redskap.swagger.brake.core.BreakingChange;
-import io.redskap.swagger.brake.runner.Options;
-import io.redskap.swagger.brake.runner.exception.LatestArtifactDownloadException;
+import com.docktape.swagger.brake.core.BreakingChange;
+import com.docktape.swagger.brake.runner.Options;
+import com.docktape.swagger.brake.runner.exception.LatestArtifactDownloadException;
 import lombok.RequiredArgsConstructor;
 import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.plugin.logging.Log;

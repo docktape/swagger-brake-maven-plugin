@@ -1,9 +1,9 @@
-package io.redskap.swagger.brake.maven;
+package com.docktape.swagger.brake.maven;
 
 import com.google.common.collect.ImmutableList;
-import io.redskap.swagger.brake.runner.Options;
-import io.redskap.swagger.brake.runner.OptionsValidator;
-import io.redskap.swagger.brake.runner.OutputFormat;
+import com.docktape.swagger.brake.runner.Options;
+import com.docktape.swagger.brake.runner.OptionsValidator;
+import com.docktape.swagger.brake.runner.OutputFormat;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
@@ -12,9 +12,7 @@ import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 
-import java.util.Collections;
 import java.util.List;
-import java.util.Optional;
 
 @Mojo(name = "check", defaultPhase = LifecyclePhase.PROCESS_CLASSES)
 public class SwaggerBrakeMojo extends AbstractMojo {

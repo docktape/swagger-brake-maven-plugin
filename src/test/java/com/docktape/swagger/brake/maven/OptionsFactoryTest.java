@@ -1,12 +1,12 @@
-package io.redskap.swagger.brake.maven;
+package com.docktape.swagger.brake.maven;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
-import io.redskap.swagger.brake.runner.ArtifactPackaging;
-import io.redskap.swagger.brake.runner.Options;
-import io.redskap.swagger.brake.runner.OutputFormat;
+import com.docktape.swagger.brake.runner.ArtifactPackaging;
+import com.docktape.swagger.brake.runner.Options;
+import com.docktape.swagger.brake.runner.OutputFormat;
 import org.junit.Test;
 import org.mockito.internal.util.collections.Sets;
 

@@ -19,4 +19,9 @@ limitations under the License.
 ```
 
 ## Publishing
+
+### Snapshot
+`./mvnw clean -Ppublication deploy jreleaser:full-deploy`
+
+### Release
 `./mvnw clean -Ppublication deploy jreleaser:full-release`

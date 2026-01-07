@@ -67,6 +67,12 @@ public class SwaggerBrakeMojo extends AbstractMojo {
     @Parameter(name = "ignoredBreakingChangeRules", required = false)
     private List<String> ignoredBreakingChangeRules;
 
+    @Parameter(name = "strictValidation", required = false)
+    private Boolean strictValidation;
+
+    @Parameter(name = "maxLogSerializationDepth", required = false)
+    private Integer maxLogSerializationDepth;
+
     private final Executor executor = new Executor(new StarterWrapper(), getLog());
     
     private final OptionsValidator optionsValidator = new OptionsValidator();
@@ -100,6 +106,8 @@ public class SwaggerBrakeMojo extends AbstractMojo {
                 .apiFilename(apiFilename)
                 .excludedPaths(excludedPaths)
                 .ignoredBreakingChangeRules(ignoredBreakingChangeRules)
+                .strictValidation(strictValidation)
+                .maxLogSerializationDepth(maxLogSerializationDepth)
                 .build();
     }
 

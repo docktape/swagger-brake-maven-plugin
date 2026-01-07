@@ -30,6 +30,8 @@ public class OptionsFactoryTest {
             .betaApiExtensionName("something.yaml")
             .excludedPaths(Sets.newSet("/pet"))
             .ignoredBreakingChangeRules(Sets.newSet("R001", "R002"))
+            .strictValidation(true)
+            .maxLogSerializationDepth(10)
             .build();
         // when
         Options result = OptionsFactory.create(parameter);
@@ -50,6 +52,8 @@ public class OptionsFactoryTest {
         assertThat(result.getApiFilename()).isEqualTo(parameter.getApiFilename());
         assertThat(result.getExcludedPaths()).isEqualTo(parameter.getExcludedPaths());
         assertThat(result.getIgnoredBreakingChangeRules()).isEqualTo(parameter.getIgnoredBreakingChangeRules());
+        assertThat(result.getStrictValidation()).isEqualTo(parameter.getStrictValidation());
+        assertThat(result.getMaxLogSerializationDepth()).isEqualTo(parameter.getMaxLogSerializationDepth());
     }
 
     @Test

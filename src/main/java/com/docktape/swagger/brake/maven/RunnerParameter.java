@@ -27,4 +27,6 @@ public class RunnerParameter {
     private String apiFilename;
     private Collection<String> excludedPaths;
     private Collection<String> ignoredBreakingChangeRules;
+    private Boolean strictValidation;
+    private Integer maxLogSerializationDepth;
 }

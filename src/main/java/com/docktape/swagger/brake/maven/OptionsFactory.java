@@ -31,6 +31,8 @@ public class OptionsFactory {
         options.setApiFilename(parameter.getApiFilename());
         options.setExcludedPaths(new HashSet<>(Optional.ofNullable(parameter.getExcludedPaths()).orElse(emptySet())));
         options.setIgnoredBreakingChangeRules(new HashSet<>(Optional.ofNullable(parameter.getIgnoredBreakingChangeRules()).orElse(emptySet())));
+        options.setStrictValidation(parameter.getStrictValidation());
+        options.setMaxLogSerializationDepth(parameter.getMaxLogSerializationDepth());
         return options;
     }
 

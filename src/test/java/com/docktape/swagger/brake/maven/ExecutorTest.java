@@ -50,7 +50,7 @@ public class ExecutorTest {
         underTest.execute(options);
         // then
         then(starter).should().start(options);
-        verifyZeroInteractions(log);
+        verifyNoInteractions(log);
     }
 
     @Test(expected = MojoFailureException.class)
